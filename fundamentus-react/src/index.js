@@ -2,10 +2,11 @@ import ReactDOM from 'react-dom'
 import React from 'react'
 
 import './index.css'
-
-const greeting = <strong>HELLO PIRIQUITO</strong>
+import FirstComponent from './components/basics/FirstComponent'
 
 ReactDOM.render(
-<div>{greeting}</div>,
+  <div>
+    <FirstComponent />
+  </div>,
   document.getElementById('root')
 )
