@@ -1,14 +1,8 @@
 import ReactDOM from 'react-dom'
 import React from 'react'
-
-import './index.css'
-import FirstComponent from './components/basics/FirstComponent'
-import ComponentWithParams from './components/basics/ComponentWithParams'
+import App from './App'
 
 ReactDOM.render(
-  <div>
-    <FirstComponent />,
-    <ComponentWithParams title='Nemoo' subtitle='Bulbassauro' />
-  </div>,
+  <App />,
   document.getElementById('root')
 )
