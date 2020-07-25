@@ -12,7 +12,7 @@ function App(props) {
     <div className="app">
       <FirstComponent />
       <div className="cards">
-        <Card title="Component Dad">
+        <Card title="Component Dad" color="#080">
           <Random min={1} max={60} />
         </Card>
         <Card title="Component with Params">
