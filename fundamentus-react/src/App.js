@@ -10,12 +10,16 @@ import MembersFamily from './components/basics/MembersFamily'
 
 import './App.css'
 import StudentList from './components/repetition/StudentList'
+import ProductsList from './components/repetition/ProductsList'
 
 function App (props) {
   return (
     <div className='app'>
       <FirstComponent />
       <div className='cards'>
+        <Card title='Products Store' color='purple' >
+          <ProductsList />
+        </Card>
         <Card title='Students Score' color='#097'>
           <StudentList />
         </Card>
