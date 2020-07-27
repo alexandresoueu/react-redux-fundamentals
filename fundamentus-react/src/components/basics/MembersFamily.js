@@ -1,6 +1,6 @@
 import React from 'react'
 
-function MembersFamily(props) {
+function MembersFamily (props) {
   return (
     <div>
       {props.name} <strong>{props.surname}</strong>
