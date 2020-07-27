@@ -9,12 +9,16 @@ import Family from './components/basics/Family'
 import MembersFamily from './components/basics/MembersFamily'
 
 import './App.css'
+import StudentList from './components/repetition/StudentList'
 
 function App (props) {
   return (
     <div className='app'>
       <FirstComponent />
       <div className='cards'>
+        <Card title='Students Score' color='#097'>
+          <StudentList />
+        </Card>
         <Card title='Components with Children' color='#FF69B4'>
           <Family surname='Berrett'>
             <MembersFamily name='Beauden' />
