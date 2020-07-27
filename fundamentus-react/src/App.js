@@ -10,28 +10,28 @@ import MembersFamily from './components/basics/MembersFamily'
 
 import './App.css'
 
-function App(props) {
+function App (props) {
   return (
-    <div className="app">
+    <div className='app'>
       <FirstComponent />
-      <div className="cards">
-        <Card title="Components with Children" color="#FF69B4">
-          <Family surname="Berrett" >
-            <MembersFamily name="Beauden" />
-            <MembersFamily name="Jordi" />
-            <MembersFamily name="Scott" />
+      <div className='cards'>
+        <Card title='Components with Children' color='#FF69B4'>
+          <Family surname='Berrett'>
+            <MembersFamily name='Beauden' />
+            <MembersFamily name='Jordi' />
+            <MembersFamily name='Scott' />
           </Family>
-          <Family surname="Smith">
-            <MembersFamily name="Aaron" />
+          <Family surname='Smith'>
+            <MembersFamily name='Aaron' />
           </Family>
         </Card>
-        <Card title="Component Dad" color="#080">
+        <Card title='Component Dad' color='#080'>
           <Random min={1} max={60} />
         </Card>
-        <Card title="Component with Params">
+        <Card title='Component with Params'>
           <ComponentWithParams title='Nemoo' subtitle='Bulbassauro' score={9.3} />
         </Card>
-        <Card title="Component fragment" color="#000">
+        <Card title='Component fragment' color='#000'>
           <FragmentComponent />
         </Card>
       </div>
