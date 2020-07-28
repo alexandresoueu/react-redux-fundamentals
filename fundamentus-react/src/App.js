@@ -11,12 +11,16 @@ import MembersFamily from './components/basics/MembersFamily'
 import './App.css'
 import StudentList from './components/repetition/StudentList'
 import ProductsList from './components/repetition/ProductsList'
+import PairOrOdd from './components/conditional/PairOrOdd'
 
 function App (props) {
   return (
     <div className='app'>
       <FirstComponent />
       <div className='cards'>
+        <Card title='Conditional' color='royalblue'>
+          <PairOrOdd number={20} />
+        </Card>
         <Card title='Products Store' color='purple' >
           <ProductsList />
         </Card>
