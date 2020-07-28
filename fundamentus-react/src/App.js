@@ -12,6 +12,7 @@ import './App.css'
 import StudentList from './components/repetition/StudentList'
 import ProductsList from './components/repetition/ProductsList'
 import PairOrOdd from './components/conditional/PairOrOdd'
+import UserInfo from './components/conditional/UserInfo'
 
 function App (props) {
   return (
@@ -20,6 +21,8 @@ function App (props) {
       <div className='cards'>
         <Card title='Conditional' color='royalblue'>
           <PairOrOdd number={20} />
+          <UserInfo user={{ name: 'Jarito'}}/>
+          <UserInfo user={{ email: 'Jarito@jaja.com'}}/>
         </Card>
         <Card title='Products Store' color='purple' >
           <ProductsList />
