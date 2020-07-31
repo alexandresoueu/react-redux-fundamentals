@@ -14,12 +14,16 @@ import ProductsList from './components/repetition/ProductsList'
 import PairOrOdd from './components/conditional/PairOrOdd'
 import UserInfo from './components/conditional/UserInfo'
 import DirectFather from './components/comunication/DirectFather'
+import IndirectFather from './components/comunication/IndirectFather'
 
 function App (props) {
   return (
     <div className='app'>
       <FirstComponent />
       <div className='cards'>
+        <Card title='Indirect Comunication' color='darkred'>
+          <IndirectFather />
+        </Card>
         <Card title='Direct Comunication' color='darkgrey'>
           <DirectFather />
         </Card>  
