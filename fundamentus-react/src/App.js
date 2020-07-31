@@ -13,12 +13,16 @@ import StudentList from './components/repetition/StudentList'
 import ProductsList from './components/repetition/ProductsList'
 import PairOrOdd from './components/conditional/PairOrOdd'
 import UserInfo from './components/conditional/UserInfo'
+import DirectFather from './components/comunication/DirectFather'
 
 function App (props) {
   return (
     <div className='app'>
       <FirstComponent />
       <div className='cards'>
+        <Card title='Direct Comunication' color='darkgrey'>
+          <DirectFather />
+        </Card>  
         <Card title='Conditional' color='royalblue'>
           <PairOrOdd number={20} />
           <UserInfo user={{ name: 'Jarito'}}/>
