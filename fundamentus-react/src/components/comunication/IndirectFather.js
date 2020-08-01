@@ -1,24 +1,27 @@
-import React from 'react'
+import React, { useState } from 'react'
 import IndirectSon from './IndirectSon'
 
-function IndirectFather(props) {
-  let name = '???'
-  let age = 0
-  let isGoodPlayer = false
+function IndirectFather (props) {
+  /* STATE
+    const [a, b] = [value, function]
+  */
 
-  function showInformations(nameParam, ageParam, isGoodPlayerParam) {
-    name = nameParam
-    age = ageParam
-    isGoodPlayer = isGoodPlayerParam
-    console.log('data:: ', nameParam, ageParam, isGoodPlayerParam)
+  const [name, setName] = useState('???')
+  const [age, setAge] = useState(0)
+  const [isGoodPlayer, setIsGoodPlayer] = useState(false)
+
+  function showInformations (name, age, isGoodPlayer) {
+    setName(name)
+    setAge(age)
+    setIsGoodPlayer(isGoodPlayer)
   }
 
   return (
     <div>
       <div>
-        <span>{name}</span>
+        <span>{name} </span>
         <span><strong>{age}</strong></span>
-        <span>{isGoodPlayer}</span>
+        <span> {isGoodPlayer ? 'Verdadeiro' : 'Falso'}</span>
       </div>
       <IndirectSon whenClick={showInformations} />
     </div>
