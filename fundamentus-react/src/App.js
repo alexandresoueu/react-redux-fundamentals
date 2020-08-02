@@ -15,22 +15,26 @@ import PairOrOdd from './components/conditional/PairOrOdd'
 import UserInfo from './components/conditional/UserInfo'
 import DirectFather from './components/comunication/DirectFather'
 import IndirectFather from './components/comunication/IndirectFather'
+import Input from './components/form/Input'
 
-function App (props) {
+function App(props) {
   return (
     <div className='app'>
       <FirstComponent />
       <div className='cards'>
+        <Card title='Controlled Components' color='blue'>
+          <Input />
+        </Card>
         <Card title='Indirect Comunication' color='darkred'>
           <IndirectFather />
         </Card>
         <Card title='Direct Comunication' color='darkgrey'>
           <DirectFather />
-        </Card>  
+        </Card>
         <Card title='Conditional' color='royalblue'>
           <PairOrOdd number={20} />
-          <UserInfo user={{ name: 'Jarito'}}/>
-          <UserInfo user={{ email: 'Jarito@jaja.com'}}/>
+          <UserInfo user={{ name: 'Jarito' }} />
+          <UserInfo user={{ email: 'Jarito@jaja.com' }} />
         </Card>
         <Card title='Products Store' color='purple' >
           <ProductsList />
