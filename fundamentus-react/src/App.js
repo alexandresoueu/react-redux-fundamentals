@@ -16,12 +16,16 @@ import UserInfo from './components/conditional/UserInfo'
 import DirectFather from './components/comunication/DirectFather'
 import IndirectFather from './components/comunication/IndirectFather'
 import Input from './components/form/Input'
+import Mega from './components/Mega/Mega'
 
 function App(props) {
   return (
     <div className='app'>
       <FirstComponent />
       <div className='cards'>
+        <Card title='Mega da Massa' color='green'>
+          <Mega quantity={7} />
+        </Card>
         <Card title='Controlled Components' color='blue'>
           <Input />
         </Card>
